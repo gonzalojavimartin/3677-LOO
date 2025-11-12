@@ -10,7 +10,7 @@
 //*---------------------------------------------------------------*
 //BMSASM   EXEC PGM=ASMA90,REGION=0M,
 //             PARM=('DECK,NOOBJECT')
-//SYSLIB   DD  DSN=CICSTSxx.CICS.SDFHMAC,DISP=SHR
+//SYSLIB   DD  DSN=DFH610.CICS.SDFHMAC,DISP=SHR
 //*              ^^^^^^^^^^^^^^^^^^^^^ AJUSTAR: MACROS CICS (DFHMSD,etc)
 //SYSIN    DD  DSN=KC03C9E.BMS.SOURCE(BIBMENU),DISP=SHR
 //SYSPRINT DD  SYSOUT=*
@@ -30,7 +30,7 @@
 //SYSLMOD  DD  DSN=KC03C9E.LOAD.LIBRARY(BIBMENU),DISP=SHR
 //SYSPRINT DD  SYSOUT=*
 //SYSUT1   DD  UNIT=SYSDA,SPACE=(TRK,(5,2))
-//SYSLIB   DD  DSN=CICSTSxx.CICS.SDFHLOAD,DISP=SHR
+//SYSLIB   DD  DSN=DFH610.CICS.SDFHLOAD,DISP=SHR
 //*              ^^^^^^^^^^^^^^^^^^^^^^ AJUSTAR: LOADLIB CICS
 //*---------------------------------------------------------------*
 //* FIN JCL CBMSMENU                                              *

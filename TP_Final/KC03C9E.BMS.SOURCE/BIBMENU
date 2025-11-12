@@ -1,39 +1,18 @@
-000010*****************************************************************
-000020* MAPSET : BIBMENU                                             *
-000030* PROPOSITO: MAPA PRINCIPAL DEL SISTEMA BIBLIOTECA EN CICS     *
-000040* AUTOR   : KC03C9E                                            *
-000050* FECHA   : 09/11/2025                                         *
-000060* VERSION : 1.0                                                *
-000070*****************************************************************
-000080         DFHMSD  TYPE=MAP,MODE=INOUT,LANG=COBOL,STORAGE=AUTO,  X
-000090               MAPSET=BIBMENU,TERM=ALL
-000100*
-000110 BIBMAIN  DFHMDI SIZE=(24,80),LINE=1,COLUMN=1,JUSTIFY=LEFT
-000120*
-000130* TITULO                                                          
-000140         DFHMDF POS=(1,20),LENGTH=30,ATTRB=(PROT,BRIGHT),       X
-000150               INITIAL='SISTEMA BIBLIOTECA KC03C9E'
-000160*
-000170* SEPARADOR                                                       
-000180         DFHMDF POS=(2,01),LENGTH=78,ATTRB=(PROT),              X
-000190               INITIAL='----------------------------------------------------------------------------'
-000200*
-000210* OPCIONES                                                        
-000220         DFHMDF POS=(4,05),LENGTH=40,ATTRB=(PROT),              X
-000230               INITIAL='1 - CARGA INICIAL DE LIBROS (CARGINI)'
-000240         DFHMDF POS=(5,05),LENGTH=40,ATTRB=(PROT),              X
-000250               INITIAL='9 - SALIR'
-000260*
-000270* INSTRUCCION                                                      
-000280         DFHMDF POS=(7,05),LENGTH=30,ATTRB=(PROT),              X
-000290               INITIAL='INGRESE OPCION Y PRESIONE ENTER:'
-000300*
-000310* CAMPO DE OPCION (INPUT)                                        
-000320 OPT      DFHMDF POS=(7,40),LENGTH=2,ATTRB=(UNPROT,IC),         X
-000330               INITIAL='  '
-000340*
-000350* MENSAJE INFORMATIVO / ERROR                                    
-000360 MSGTXT   DFHMDF POS=(9,05),LENGTH=60,ATTRB=(PROT),             X
-000370               INITIAL=' '
-000380*
-000390         DFHMSD  TYPE=FINAL
+         PRINT NOGEN
+MAPSET1  DFHMSD TYPE=MAP,MODE=INOUT,LANG=COBOL,STORAGE=AUTO,           X
+               CTRL=(FREEKB,FRSET),TERM=3270,TIOAPFX=YES,EXTATT=NO,    X
+               MAPATTS=(COLOR,HILIGHT)
+MAP1     DFHMDI SIZE=(24,80)
+         DFHMDF POS=(01,20),LENGTH=30,ATTRB=(PROT,BRIGHT),             X
+               INITIAL='SISTEMA BIBLIOTECA KC03C9E'
+         DFHMDF POS=(02,01),LENGTH=78,ATTRB=(PROT),                    X
+               INITIAL='----------------------------------------'
+         DFHMDF POS=(04,05),LENGTH=40,ATTRB=(PROT),                    X
+               INITIAL='1 - CARGA INICIAL DE LIBROS (CARGINI)'
+         DFHMDF POS=(05,05),LENGTH=40,ATTRB=(PROT),INITIAL='9 - SALIR'
+         DFHMDF POS=(07,05),LENGTH=30,ATTRB=(PROT),                    X
+               INITIAL='INGRESE OPCION Y PRESIONE ENTER:'
+OPT      DFHMDF POS=(07,40),LENGTH=02,ATTRB=(UNPROT,IC),INITIAL='  '
+MSGTXT   DFHMDF POS=(09,05),LENGTH=60,ATTRB=(PROT),INITIAL=' '
+         DFHMSD TYPE=FINAL
+         END
