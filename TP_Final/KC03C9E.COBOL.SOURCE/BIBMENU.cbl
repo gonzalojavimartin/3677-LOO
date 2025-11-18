@@ -6,7 +6,7 @@
 000060* VERSION  : 1.0                                                *
 000070*****************************************************************
 000080* FUNCIONALIDAD:                                                *
-000090* - MAPSET: BIBMENU, MAP: BIBMAIN                              *
+000090* - MAPSET: BIBMENU, MAP: BIBMAIN                               *
 000100* - OPCION 1: DISPARA JOB BATCH CARGINI REAL EN JES             *
 000110* - OPCION 9/X: SALE DEL SISTEMA                                *
 000120*****************************************************************
@@ -44,8 +44,8 @@
 000440*****************************************************************
 000450 ENVIAR-MENU-INICIAL.
 000460     MOVE SPACES        TO WS-MENSAJE
-000470     MOVE SPACES        TO BIBMAIN-MSGTXT
-000480     MOVE ' '           TO BIBMAIN-OPT
+000470     MOVE SPACES        TO MSGTXTO
+000480     MOVE SPACES        TO OPTO
 000490     EXEC CICS SEND MAP('BIBMAIN')
 000500                    MAPSET('BIBMENU')
 000510                    ERASE
@@ -57,7 +57,7 @@
 000570                      MAPSET('BIBMENU')
 000580     END-EXEC
 000590*
-000600     MOVE BIBMAIN-OPT  TO WS-OPCION
+000600     MOVE OPTI          TO WS-OPCION
 000610     EXIT.
 000620*****************************************************************
 000630 PROCESAR-OPCION.
@@ -79,8 +79,8 @@
 000790                TO WS-MENSAJE
 000800     END-EVALUATE
 000810*
-000820     MOVE WS-MENSAJE   TO BIBMAIN-MSGTXT
-000830     MOVE SPACES       TO BIBMAIN-OPT
+000820     MOVE WS-MENSAJE   TO MSGTXTO
+000830     MOVE SPACES       TO OPTO
 000840*
 000850     EXEC CICS SEND MAP('BIBMAIN')
 000860                    MAPSET('BIBMENU')
