@@ -1,0 +1,32 @@
+OBJECT CHARACTERISTICS                                    CICS RELEASE = 0740
+ CEDA  View LIbrary( KC03C9EL )                                              
+  LIbrary        : KC03C9EL                                                  
+  Group          : KC03C9E                                                   
+  DEScription    :                                                           
+  Ranking        : 50                 1-9 | 11-99                            
+  CRitical       : No                 No | Yes                               
+  Status         : Enabled            Enabled | Disabled                     
+ DATA SET NAMES                                                              
+  DSNAME01       : KC03C9E.LOAD.LIBRARY                                      
+  DSNAME02       :                                                           
+  DSNAME03       :                                                           
+  DSNAME04       :                                                           
+  DSNAME05       :                                                           
+  DSNAME06       :                                                           
+  DSNAME07       :                                                           
+  DSNAME08       :                                                           
+  DSNAME09       :                                                           
+  DSNAME10       :                                                                                                       
+  DSNAME11       :                                                           
+  DSNAME12       :                                                           
+  DSNAME13       :                                                           
+  DSNAME14       :                                                           
+  DSNAME15       :                                                           
+  DSNAME16       :                                                           
+ DEFINITION SIGNATURE                                                        
+  DEFinetime     : 11/18/25 19:02:47                                         
+  CHANGETime     : 11/18/25 19:02:47                                         
+  CHANGEUsrid    : CICSUSER                                                  
+  CHANGEAGEnt    : CSDApi             CSDApi | CSDBatch                      
+  CHANGEAGRel    : 0740                                                      
+                                                                             

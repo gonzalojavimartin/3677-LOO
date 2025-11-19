@@ -1,0 +1,16 @@
+OBJECT CHARACTERISTICS                                    CICS RELEASE = 0740
+ CEDA  View MApset( BIBMENU  )                                               
+  MApset         : BIBMENU                                                   
+  Group          : KC03C9E                                                   
+  DEScription    :                                                           
+  REsident       : No                 No | Yes                               
+  USAge          : Normal             Normal | Transient                     
+  USElpacopy     : No                 No | Yes                               
+  Status         : Enabled            Enabled | Disabled                     
+  RSl            : 00                 0-24 | Public                          
+ DEFINITION SIGNATURE                                                        
+  DEFinetime     : 11/18/25 17:36:01                                         
+  CHANGETime     : 11/18/25 17:36:01                                         
+  CHANGEUsrid    : CICSUSER                                                  
+  CHANGEAGEnt    : CSDApi             CSDApi | CSDBatch                      
+  CHANGEAGRel    : 0740                                                      

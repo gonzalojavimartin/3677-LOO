@@ -1,0 +1,64 @@
+OBJECT CHARACTERISTICS                                    CICS RELEASE = 0740
+ CEDA  View TRANSaction( TPG9 )                                              
+  TRANSaction    : TPG9                                                      
+  Group          : KC03C9E                                                   
+  DEScription    :                                                           
+  PROGram        : BIBMENU                                                   
+  TWasize        : 00000              0-32767                                
+  PROFile        : DFHCICST                                                  
+  PArtitionset   :                                                           
+  STAtus         : Enabled            Enabled | Disabled                     
+  PRIMedsize     : 00000              0-65520                                
+  TASKDATALoc    : Any                Below | Any                            
+  TASKDATAKey    : User               User | Cics                            
+  STOrageclear   : No                 No | Yes                               
+  RUnaway        : System             System | 0 | 250-2700000               
+  SHutdown       : Disabled           Disabled | Enabled                     
+  ISolate        : Yes                Yes | No                               
+  Brexit         :                                                           
+ REMOTE ATTRIBUTES                                                            
+  DYnamic        : No                 No | Yes                                
+  ROutable       : No                 No | Yes                                
+  REMOTESystem   :                                                            
+  REMOTEName     :                                                            
+  TRProf         :                                                            
+  Localq         :                    No | Yes                                
+ SCHEDULING                                                                   
+  PRIOrity       : 001                0-255                                   
+  TClass         : No                 No | 1-10                               
+  TRANClass      : DFHTCL00                                                   
+ ALIASES           
+  ALias          : 
+  TASKReq        : 
+  XTRanid        : 
+  TPName         : 
+                 : 
+  XTPname        : 
+                 : 
+                 :                                                            
+  RECOVERY                                                                     
+   DTimout        : No                 No | 1-6800 (MMSS)                      
+   RESTart        : No                 No | Yes                                
+   SPurge         : Yes                Yes | No                                
+   TPUrge         : Yes                Yes | No                                
+   DUmp           : Yes                Yes | No                                
+   TRACe          : Yes                Yes | No                                
+   COnfdata       : No                 No | Yes                                
+   Otstimeout     : No                 No | 0-240000 (HHMMSS)                  
+  INDOUBT ATTRIBUTES                                                           
+   ACtion         : Backout            Backout | Commit                        
+   WAIT           : Yes                Yes | No                                
+   WAITTime       : 00 , 00 , 00       0-99 (Days,Hours,Mins)                  
+   INdoubt        : Backout            Backout | Commit | Wait                 
+  SECURITY                                                                     
+   RESSec         : No                 No Yes                                  
+   CMdsec         : No                 No Yes                                  
+   Extsec         : No                 No | Yes                                
+   TRANSec        : 01                 1-64                                    
+   RSl            : 00                 0-24 | Public                           
+  DEFINITION SIGNATURE                                                  
+   DEFinetime     : 11/18/25 17:38:50                                   
+   CHANGETime     : 11/18/25 17:38:50                                   
+   CHANGEUsrid    : CICSUSER                                            
+   CHANGEAGEnt    : CSDApi             CSDApi | CSDBatch                
+   CHANGEAGRel    : 0740                                                

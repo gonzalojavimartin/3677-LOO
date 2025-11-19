@@ -1,0 +1,43 @@
+OBJECT CHARACTERISTICS                                    CICS RELEASE = 0740
+ CEDA  View PROGram( BIBMENU  )                                              
+  PROGram        : BIBMENU                                                   
+  Group          : KC03C9E                                                   
+  DEScription    :                                                           
+  Language       : CObol              CObol | Assembler | Le370 | C | Pli    
+  RELoad         : No                 No | Yes                               
+  RESident       : No                 No | Yes                               
+  USAge          : Normal             Normal | Transient                     
+  USElpacopy     : No                 No | Yes                               
+  Status         : Enabled            Enabled | Disabled                     
+  RSl            : 00                 0-24 | Public                          
+  CEdf           : Yes                Yes | No                               
+  DAtalocation   : Any                Below | Any                            
+  EXECKey        : User               User | Cics                            
+  COncurrency    : Quasirent          Quasirent | Threadsafe | Required      
+  Api            : Cicsapi            Cicsapi | Openapi                                                                            
+REMOTE ATTRIBUTES                                                      
+ DYnamic        : No                 No | Yes                          
+ REMOTESystem   :                                                      
+ REMOTEName     :                                                      
+ Transid        :                                                      
+ EXECUtionset   : Fullapi            Fullapi | Dplsubset               
+JVM ATTRIBUTES                                                         
+ JVM            : No                 No | Yes                          
+ JVMClass       :                       
+JVM ATTRIBUTES                                                               
+ JVM            : No                 No | Yes                                
+ JVMClass       :                                                            
+ (Mixed Case)   :                                                            
+                :                                                            
+                :                                                            
+                :                                                            
+ JVMServer      :                                                            
+ JVMProfile     :                                                (Mixed Case)
+JAVA PROGRAM OBJECT ATTRIBUTES                                               
+ Hotpool        : No                 No | Yes                                
+DEFINITION SIGNATURE                                                        
+ DEFinetime     : 11/18/25 17:36:53                                         
+ CHANGETime     : 11/18/25 17:37:40                                         
+ CHANGEUsrid    : CICSUSER                                                  
+ CHANGEAGEnt    : CSDApi             CSDApi | CSDBatch                      
+ CHANGEAGRel    : 0740                                                                                      
